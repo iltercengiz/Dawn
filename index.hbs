@@ -3,9 +3,10 @@
 <div class="content-area">
     <main class="site-main">
         <div class="post-feed container medium">
-        	<h2 class="featured-title">Latest Posts</h2>
             {{#foreach posts visibility="all"}}
-                {{> "loop"}}
+                {{^if featured}}
+                    {{> "loop"}}
+                {{/if}}
             {{/foreach}}
         </div>
         {{pagination}}
