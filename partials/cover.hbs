@@ -2,13 +2,22 @@
     <div class="cover-content">
         {{#if @site.icon}}
             <div class="cover-icon">
+                <a href="https://apps.apple.com/us/app/check-later/id1493525536">
                 <img class="cover-icon-image" src="{{@site.icon}}" alt="{{@site.title}}">
+                </a>
             </div>
         {{/if}}
 
         {{#if @site.description}}
             <div class="cover-description">{{@site.description}}</div>
         {{/if}}
+
+        <div class="cover-icon">
+            <h1>Check Later</h1>
+            <center>
+                <a href="https://apps.apple.com/us/app/check-later/id1493525536"><img src="/content/images/assets/appstore.svg"></a>
+            </center>
+        </div>
 
         {{#if @labs.members}}
             {{#unless @member}}
