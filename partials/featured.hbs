@@ -4,7 +4,7 @@
             <h2 class="featured-title">Features</h2>
             <div class="featured-feed owl">
                 {{#foreach featured visibility="all"}}
-                    <article class="{{post_class}}">
+                    <article class="{{post_class}} u-text-format">
                         {{#if feature_image}}
                             <div class="u-placeholder horizontal">
                                 <img class="lazyload u-object-fit"
@@ -14,10 +14,10 @@
                                     alt="{{title}}">
                             </div>
                         {{/if}}
-                        <h3 class="post-title">{{title}}</h3>
+                        <h2 class="post-title u-text-format">{{title}}</h3>
                         {{!-- <a class="u-permalink" href={{url}}
                             aria-label="{{title}}"></a> --}}
-                        {{excerpt}}
+                        {{content}}
                     </article>
                 {{/foreach}}
             </div>
